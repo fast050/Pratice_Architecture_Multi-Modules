@@ -7,7 +7,7 @@ import com.mylibrary.source.api.ApiSource
 import com.mylibrary.source.database.DbInterface
 import com.mylibrary.source.database.DbSource
 
- class RepositoryProject internal constructor(
+internal class RepositoryProject internal constructor(
     private val apiSource: APIInterface1,
     private val dbSource: DbInterface
 )  {

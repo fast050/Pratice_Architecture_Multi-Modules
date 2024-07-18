@@ -9,7 +9,7 @@ internal class DbSource() : DbInterface {
         return listOf(
             DbModelProject(
                 "Api data 1"
-            ) ,
+            ),
             DbModelProject(
                 "Api data 2"
             ),

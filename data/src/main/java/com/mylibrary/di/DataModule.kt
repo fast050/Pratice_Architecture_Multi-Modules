@@ -5,6 +5,7 @@ import com.mylibrary.source.api.APIInterface1
 import com.mylibrary.source.api.ApiSource
 import com.mylibrary.source.database.DbInterface
 import com.mylibrary.source.database.DbSource
+import com.mylibrary.usecase.GetDataUseCase
 import org.koin.dsl.module
 
 val dataModule = module {
@@ -18,5 +19,9 @@ val dataModule = module {
 
     single {
         RepositoryProject(get() , get())
+    }
+
+    single {
+        GetDataUseCase(get())
     }
 }
